@@ -133,70 +133,72 @@ export default function Projects() {
     };
 
     return(
-        <StyledProjects>
-            <h3>Technical Projects</h3>
-            
-            <div className="project-item">
-                <h4>EatSmart [BostonHacks]</h4>
-                <p>
-                    Created a food waste reduction web app that 
-                    uses computer vision to detect ingredients 
-                    from photos or videos of a fridge and recommend 
-                    recipes tailored to dietary preferences. Built 
-                    using Python backend for ingredient extraction, 
-                    implementing confidence based classification logic 
-                    to dynamically inform frontend decisions, aiming 
-                    to optimize the user experience
-                </p>
-            </div>
-            <div className="project-item">
-                <h4>MoveGreen [EcoHacks]</h4>
-                <p>
-                    Built a web app that identifies sustainable transportation 
-                    options for Boston commuters. Implemented a JavaScript backend, 
-                    leveraging Google Maps API, to compute Boston-specific carbon 
-                    emission estimates and deliver data-driven commute recommendations
-                    to the frontend.
-                </p>
-            </div>
-
-            <div id="calculator-wrapper">
-                <h3>JavaScript Calculator</h3>
-                <div className="calc-inputs">
-                    <input 
-                        type="number" 
-                        placeholder="First Number"
-                        value={num1}
-                        onChange={(e) => setNum1(e.target.value)} 
-                    />
-                    <input 
-                        type="number" 
-                        placeholder="Second Number"
-                        value={num2}
-                        onChange={(e) => setNum2(e.target.value)} 
-                    />
+        <>
+          <title>Home | Resume</title>
+            <StyledProjects>
+                <h3>Technical Projects</h3>
+                
+                <div className="project-item">
+                    <h4>EatSmart [BostonHacks]</h4>
+                    <p>
+                        Created a food waste reduction web app that 
+                        uses computer vision to detect ingredients 
+                        from photos or videos of a fridge and recommend 
+                        recipes tailored to dietary preferences. Built 
+                        using Python backend for ingredient extraction, 
+                        implementing confidence based classification logic 
+                        to dynamically inform frontend decisions, aiming 
+                        to optimize the user experience
+                    </p>
+                </div>
+                <div className="project-item">
+                    <h4>MoveGreen [EcoHacks]</h4>
+                    <p>
+                        Built a web app that identifies sustainable transportation 
+                        options for Boston commuters. Implemented a JavaScript backend, 
+                        leveraging Google Maps API, to compute Boston-specific carbon 
+                        emission estimates and deliver data-driven commute recommendations
+                        to the frontend.
+                    </p>
                 </div>
 
-                <div className="calc-buttons">
-                    <button onClick={doAddition}>+</button>
-                    <button onClick={doSubtraction}>-</button>
-                    <button onClick={doMultiplication}>*</button>
-                    <button onClick={doDivision}>/</button>
-                    <button onClick={doPower}>**</button>
-                    <button id="clear-btn" onClick={doClear}>Clear</button>
+                <div id="calculator-wrapper">
+                    <h3>JavaScript Calculator</h3>
+                    <div className="calc-inputs">
+                        <input 
+                            type="number" 
+                            placeholder="First Number"
+                            value={num1}
+                            onChange={(e) => setNum1(e.target.value)} 
+                        />
+                        <input 
+                            type="number" 
+                            placeholder="Second Number"
+                            value={num2}
+                            onChange={(e) => setNum2(e.target.value)} 
+                        />
+                    </div>
+
+                    <div className="calc-buttons">
+                        <button onClick={doAddition}>+</button>
+                        <button onClick={doSubtraction}>-</button>
+                        <button onClick={doMultiplication}>*</button>
+                        <button onClick={doDivision}>/</button>
+                        <button onClick={doPower}>**</button>
+                        <button id="clear-btn" onClick={doClear}>Clear</button>
+                    </div>
+
+                    <div id="output-container">
+                        Result: <span 
+                            id="output" 
+                            style={{ color: typeof result === 'number' && result < 0 ? 'red' : 'inherit' }}
+                        >
+                            {result}
+                        </span>
+                    </div>
                 </div>
 
-                <div id="output-container">
-                    Result: <span 
-                        id="output" 
-                        style={{ color: typeof result === 'number' && result < 0 ? 'red' : 'inherit' }}
-                    >
-                        {result}
-                    </span>
-                </div>
-            </div>
-
-        </StyledProjects>
-
+            </StyledProjects>
+        </>
     );
 }

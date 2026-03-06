@@ -62,7 +62,7 @@ const StyledHome = styled.main`
 export default function Home(){
     return(
         <>
-          <title>Documents | Resume</title>
+          <title>Home | Resume</title>
           <StyledHome>
 
               <h3>Home</h3>
