@@ -1,63 +1,57 @@
-import Header from "./components/Header.tsx";
-import Nav from "./components/Nav.tsx";
-import {Route, Routes} from "react-router";
-import Home from "./components/Home.tsx";
-import Education from "./components/Education.tsx";
-import Experiences from "./components/Experiences.tsx";
-import Certifications from "./components/Certifications.tsx";
-import Projects from "./components/Projects.tsx";
-import Documents from "./components/Documents.tsx";
+import { createBrowserRouter, RouterProvider, Routes, Route } from "react-router-dom";
+import styled from "styled-components";
 
-function Root(){
-  return(
-    <>
-      <Header/>
-      <Nav/>
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import Home from "./components/mains/Home";
+import Education from "./components/mains/Education";
+import Experiences from "./components/mains/Experiences";
+import Certifications from "./components/mains/Certifications";
+import Projects from "./components/mains/Projects";
+import Documents from "./components/mains/Documents";
+
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #FBFBF2; /* Your page background color */
+  min-height: 80vh;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+`;
+
+const PageWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+`;
+
+function Root() {
+  return (
+    <PageWrapper>
+      <Header />
+      <Container>
+        <Nav />
         <Routes>
-          <Route
-            path={`/`}
-            element = {<Home/>}
-          />
-          <Route
-            path={`edu.html`}
-            element = {<Education/>}
-          />
-          <Route
-            path={`emp.html`}
-            element = {<Experiences/>}
-          />
-          <Route
-            path={`awards.html`}
-            element = {<Certifications/>}
-          />
-          <Route
-            path={`projects.html`}
-            element = {<Projects/>}
-          />
-          <Route
-            path={`doc.html`}
-            element = {<Documents/>}
-          />
+          <Route path="/" element={<Home />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/experiences" element={<Experiences />} />
+          <Route path="/certifications" element={<Certifications />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/documents" element={<Documents />} />
         </Routes>
-      <Footer/>
-    </>
-  )
+      </Container>
+      <Footer />
+    </PageWrapper>
+  );
 }
 
-const router = createBrowserRouter(
-  [{path:"*", Component:Root}]
-)
+const router = createBrowserRouter([{ path: "*", Component: Root }]);
 
 export default function App() {
-
-  return (
-    <>
-      <RouterProvider router={router}/>
-
-     
-    </>
-  )
+  return <RouterProvider router={router} />;
 }
-
-    import Certification from "./components/mains/Certifications.tsx";
-
