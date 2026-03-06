@@ -24,6 +24,7 @@ const GlobalStyle = createGlobalStyle`
 const Container = styled.div`
   display: flex;
   flex-direction: row;
+  flex:1;
   width: 100%;
   background-color: #FBFBF2; 
   min-height: 80vh;
@@ -35,9 +36,10 @@ const Container = styled.div`
 
 const PageWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  width: 100vw;
+  justify-content: center; 
+  width: 100%;
   min-height: 100vh;
+  background-color: #F0F0E8;
 `;
 
 function Root() {
