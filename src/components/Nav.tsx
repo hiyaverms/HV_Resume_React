@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const StyledNav = styled.nav`
     width: 30%; 
-    background-color: #DDD5E7; 
-    padding: 20px;
+    background-color: #1B065E; 
+    padding: 15px;
     min-height: 100%;
 
     ul {
@@ -21,8 +21,7 @@ const StyledNav = styled.nav`
 
     a {
         text-decoration: none;
-        color: #1B065E;
-        background-color: #FBFBF2;
+        color: #FBFBF2;
         display: block;
         padding: 15px;
         border-radius: 8px;

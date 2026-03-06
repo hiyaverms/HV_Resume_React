@@ -2,12 +2,15 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledFooter = styled.footer`
-    background-color: #1B065E;
+    background-color: #2A2D34;
     color: #FBFBF2;
     padding: 20px;
+    text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+    font-size: calc(12px + 0.2vw);
 
     a {
         color: #759FBC;
