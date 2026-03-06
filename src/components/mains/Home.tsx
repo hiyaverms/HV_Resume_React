@@ -64,11 +64,11 @@ export default function Home(){
 
             <h3>Home</h3>
             <div id="this-one">
-                <img src="../../public/pfp_2025.jpg" alt="Hiya Verma"/>
+                <img src="/pfp_2025.jpg" alt="Hiya Verma"/>
                 <p>
                     My name is Hiya Verma. I am a third year Data Science student. I am currently seeking a
                     summer internship. I am looking for a role where I can make a meaningful contribution while
-                    also learned from seasoned industry professionals.
+                    also learning from seasoned industry professionals.
                 </p>
             </div>
             <p id="bottom-p">
