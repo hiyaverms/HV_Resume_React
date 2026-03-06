@@ -13,31 +13,31 @@ const StyledExperiences = styled.main`
         font-size: calc(18px + 0.8vw);
     }
 
-    .job-section {
-        margin-bottom: 30px;
 
-        h4 {
-            color: #759FBC; /* Steel Blue */
-            font-size: calc(16px + 0.5vw);
-            margin-bottom: 5px;
-        }
+    margin-bottom: 30px;
 
-        p {
-            font-size: calc(14px + 0.2vw);
-            margin-bottom: 10px;
-        }
+    h4 {
+        color: #759FBC; /* Steel Blue */
+        font-size: calc(16px + 0.5vw);
+        margin-bottom: 5px;
+    }
 
-        ul {
-            padding-left: 35px;
-            margin-top: 10px;
-            
-            li {
-                margin-bottom: 8px;
-                font-size: calc(13px + 0.2vw);
-                line-height: 1.4;
-            }
+    p {
+        font-size: calc(14px + 0.2vw);
+        margin-bottom: 10px;
+    }
+
+    ul {
+        padding-left: 35px;
+        margin-top: 10px;
+        
+        li {
+            margin-bottom: 8px;
+            font-size: calc(13px + 0.2vw);
+            line-height: 1.4;
         }
     }
+    
 
     @media screen and (max-width: 1000px) {
         width: 100%;
