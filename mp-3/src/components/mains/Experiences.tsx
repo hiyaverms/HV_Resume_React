@@ -5,7 +5,6 @@ const StyledExperiences = styled.main`
     flex: 1;
     width: 70%;
 
-    /* Header styling consistent with your other pages */
     h3 {
         margin-bottom: 20px;
         color: #1B065E;
@@ -14,7 +13,6 @@ const StyledExperiences = styled.main`
         font-size: calc(18px + 0.8vw);
     }
 
-    /* Target each job block */
     .job-section {
         margin-bottom: 30px;
 
