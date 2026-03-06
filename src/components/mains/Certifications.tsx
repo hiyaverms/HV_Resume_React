@@ -11,7 +11,6 @@ const StyledCertifications = styled.main`
         border-bottom: 2px solid #DDD5E7;
         display: inline-block;
         font-size: calc(18px + 0.8vw);
-        /* Add margin to the second h3 (Certifications) */
         &:not(:first-child) {
             margin-top: 40px;
         }
