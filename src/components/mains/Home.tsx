@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const StyledHome = styled.main`
   padding: 40px;
   width: 70%; 
+  flex: 1;
 
   h3 {
     margin-bottom: 20px;
@@ -74,7 +75,7 @@ export default function Home(){
             <p id="bottom-p">
                 Welcome to my website! You can find my educational history 
                 <strong><em><u><Link to="/education">here</Link></u></em></strong>
-                 and my employment history 
+                &nbsp; and my employment history 
                 <strong><em><u><Link to="/experiences">here</Link></u></em></strong>
                  — as well as other information that might be
                 of interest to you.<br></br> A little bit about me: My academic journey, 

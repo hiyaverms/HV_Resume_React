@@ -45,6 +45,8 @@ const StyledCertifications = styled.main`
 
 export default function Certification(){
     return(
+        <>
+            <title>Certifications | Resume</title>
         <StyledCertifications>
             <h3>Honors & Awards</h3>
                     <ul>
@@ -96,5 +98,6 @@ export default function Certification(){
                         </li>
                     </ul>
         </StyledCertifications>
+    </>
     );
 }
