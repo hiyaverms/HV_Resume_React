@@ -134,7 +134,7 @@ export default function Projects() {
 
     return(
         <>
-          <title>Home | Resume</title>
+          <title>Projects | Resume</title>
             <StyledProjects>
                 <h3>Technical Projects</h3>
                 
