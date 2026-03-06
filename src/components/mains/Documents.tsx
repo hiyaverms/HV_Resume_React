@@ -38,7 +38,6 @@ const StyledDocs = styled.main`
             cursor: pointer;
 
             &:hover {
-                transform: translateX(5px);
                 background-color: #DDD5E7;
             }
         }

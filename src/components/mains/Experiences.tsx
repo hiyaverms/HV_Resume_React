@@ -28,7 +28,7 @@ const StyledExperiences = styled.main`
         }
 
         ul {
-            padding-left: 25px;
+            padding-left: 35px;
             margin-top: 10px;
             
             li {
