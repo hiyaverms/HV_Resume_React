@@ -70,7 +70,6 @@ export default function Experiences() {
                             </li>
                         </ul>
                     </div>
-                    <br/>
                     <div>
                         <h4>CalTeach Intern</h4>
                         <p><strong>University of California, Santa Cruz CalTeach</strong> | <em>December 2023 - June 2024</em></p>

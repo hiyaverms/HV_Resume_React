@@ -1,7 +1,51 @@
+import styled from 'styled-components';
+
+const StyledCertifications = styled.main`
+    padding: 40px;
+    flex: 1;
+    width: 70%;
+
+    h3 {
+        margin-bottom: 20px;
+        color: #1B065E;
+        border-bottom: 2px solid #DDD5E7;
+        display: inline-block;
+        font-size: calc(18px + 0.8vw);
+        /* Add margin to the second h3 (Certifications) */
+        &:not(:first-child) {
+            margin-top: 40px;
+        }
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 25px;
+        
+        li {
+            margin-bottom: 20px;
+            font-size: calc(14px + 0.2vw);
+            line-height: 1.5;
+
+            strong {
+                color: #2A2D34;
+            }
+
+            p {
+                margin-top: 5px;
+                font-size: calc(13px + 0.1vw);
+                opacity: 0.9;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+    }
+`;
 
 export default function Certification(){
     return(
-        <main id="main">
+        <StyledCertifications>
             <h3>Honors & Awards</h3>
                     <ul>
                         <li>
@@ -33,7 +77,7 @@ export default function Certification(){
                             </p>
                         </li>
                     </ul>
-                    <br/>
+
                     <h3>Certifications</h3>
                     <ul>
                         <li>
@@ -51,6 +95,6 @@ export default function Certification(){
                             </p>
                         </li>
                     </ul>
-        </main>
+        </StyledCertifications>
     );
 }

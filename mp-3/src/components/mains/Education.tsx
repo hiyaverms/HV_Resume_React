@@ -58,7 +58,6 @@ export default function Education(){
                             <li>GPA: 3.8/4.0</li>
                         </ul>
                     </div>
-                    <br></br>
                     <div>
                         <h4>High School Diploma</h4>
                         <p><strong>Moreau Catholic High School</strong> | <em>Graduated: 2023</em></p>

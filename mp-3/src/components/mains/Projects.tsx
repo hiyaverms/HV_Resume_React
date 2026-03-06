@@ -149,8 +149,6 @@ export default function Projects() {
                     to optimize the user experience
                 </p>
             </div>
-            <br>
-            </br>
             <div className="project-item">
                 <h4>MoveGreen [EcoHacks]</h4>
                 <p>
@@ -162,16 +160,6 @@ export default function Projects() {
                 </p>
             </div>
 
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
             <div id="calculator-wrapper">
                 <h3>JavaScript Calculator</h3>
                 <div className="calc-inputs">
