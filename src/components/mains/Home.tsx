@@ -80,7 +80,10 @@ export default function Home(){
                   &nbsp; and my employment history &nbsp;
                   <strong><em><u><Link to="/experiences">here</Link></u></em></strong>
                   &nbsp;— as well as other information that might be
-                  of interest to you.<br></br> A little bit about me: My academic journey, 
+                  of interest to you.
+                  <br></br> 
+                  <br></br> 
+                  A little bit about me: My academic journey, 
                   which began with a focus on Applied Mathematics at UC Santa Cruz, 
                   has evolved into a passion for leveraging data-driven insights to 
                   solve complex problems. I am particularly interested in the 
