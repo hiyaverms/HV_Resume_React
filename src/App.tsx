@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider, Routes, Route } from "react-router-dom";
-import styled from "styled-components";
+import styled from "styled-components";\
+import { createGlobalStyle } from 'styled-components';
 
 import Header from "./components/Header";
 import Nav from "./components/Nav";
@@ -11,6 +12,20 @@ import Certifications from "./components/mains/Certifications";
 import Projects from "./components/mains/Projects";
 import Documents from "./components/mains/Documents";
 
+const GlobalStyle = createGlobalStyle`
+  @import url(''https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #FBFBF2;
+  }
+`;
 
 const Container = styled.div`
   display: flex;
@@ -53,5 +68,10 @@ function Root() {
 const router = createBrowserRouter([{ path: "*", Component: Root }]);
 
 export default function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <GlobalStyle />
+      <RouterProvider router={router} />
+    </>
+  );
 }
