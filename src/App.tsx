@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider, Routes, Route } from "react-router-dom";
-import styled from "styled-components";\
+import styled from "styled-components";
 import { createGlobalStyle } from 'styled-components';
 
 import Header from "./components/Header";

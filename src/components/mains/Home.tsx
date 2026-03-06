@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
 
 const StyledHome = styled.main`
   padding: 40px;
@@ -71,11 +72,11 @@ export default function Home(){
                 </p>
             </div>
             <p id="bottom-p">
-                Welcome to my website! You can find my educational history
-                <strong><em><u><a href="edu.html">here</a></u></em></strong>
-                and my employment history
-                <strong><em><u><a href="emp.html">here</a></u></em></strong>
-                — as well as other information that might be
+                Welcome to my website! You can find my educational history 
+                <strong><em><u><Link to="/education">here</Link></u></em></strong>
+                 and my employment history 
+                <strong><em><u><Link to="/experiences">here</Link></u></em></strong>
+                 — as well as other information that might be
                 of interest to you.<br></br> A little bit about me: My academic journey, 
                 which began with a focus on Applied Mathematics at UC Santa Cruz, 
                 has evolved into a passion for leveraging data-driven insights to 
