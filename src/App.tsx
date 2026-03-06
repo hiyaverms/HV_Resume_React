@@ -16,7 +16,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: #FBFBF2; /* Your page background color */
+  background-color: #FBFBF2; 
   min-height: 80vh;
 
   @media screen and (max-width: 1000px) {
