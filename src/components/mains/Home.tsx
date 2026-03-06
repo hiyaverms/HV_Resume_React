@@ -83,7 +83,7 @@ export default function Home(){
                 solve complex problems. I am particularly interested in the 
                 intersection of Artificial Intelligence and user experience, 
                 as seen through my work with machine learning algorithms and 
-                natural language processing.Whether I am building sustainability
+                natural language processing. Whether I am building sustainability
                 apps like MoveGreen at hackathons or tutoring students in advanced 
                 mathematics, I am driven by a desire to create tools that make a 
                 meaningful impact.
