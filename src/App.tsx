@@ -13,40 +13,50 @@ import Projects from "./components/mains/Projects";
 import Documents from "./components/mains/Documents";
 
 const GlobalStyle = createGlobalStyle`
-  @import url(''https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
   body {
-    font-family: 'Roboto', sans-serif; 
-    background-color: #FBFBF2;
+    font-family: 'Roboto', sans-serif;
+    background-color: #DDD5E7; 
+    color: #2A2D34;
+    min-height: 100vh;
   }
 `;
 
-const Container = styled.div`
+const Wrapper = styled.div`
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto; 
+  background-color: #FBFBF2;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  min-height: 100vh;
   display: flex;
-  flex-direction: row;
-  flex:1;
-  width: 100%;
-  background-color: #FBFBF2; 
-  min-height: 80vh;
+  flex-direction: column;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 750px) {
+    width: 100%;
+  }
+`;
+
+const ContentContainer = styled.div`
+  display: flex;
+  flex: 1; 
+  width: 100%;
+
+  @media screen and (max-width: 750px) {
     flex-direction: column;
   }
 `;
 
-const PageWrapper = styled.div`
-  display: flex;
-  justify-content: center; 
-  width: 100%;
-  min-height: 100vh;
-  background-color: #F0F0E8;
-`;
-
 function Root() {
   return (
-    <PageWrapper>
+    <Wrapper>
       <Header />
-      <Container>
+      <ContentContainer>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -56,9 +66,9 @@ function Root() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/documents" element={<Documents />} />
         </Routes>
-      </Container>
+      </ContentContainer>
       <Footer />
-    </PageWrapper>
+    </Wrapper>
   );
 }
 
