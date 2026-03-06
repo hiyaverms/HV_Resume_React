@@ -1,7 +1,65 @@
+import styled from 'styled-components';
+
+const StyledHome = styled.main`
+  padding: 40px;
+  width: 70%; 
+
+  h3 {
+    margin-bottom: 20px;
+    color: #1B065E;
+    border-bottom: 2px solid #DDD5E7;
+    display: inline-block;
+    font-size: calc(18px + 0.8vw);
+  }
+
+  #this-one {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 25px;
+
+    img {
+      max-width: 150px;
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #759FBC;
+    }
+
+    p {
+      font-size: calc(14px + 0.2vw);
+      flex: 1;
+    }
+  }
+
+  #bottom-p {
+    font-size: calc(14px + 0.2vw);
+    line-height: 1.6;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      &:hover {
+        text-decoration: underline;
+        background-color: rgba(251, 251, 242, 0.1);
+      }
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    width: 100%;
+    #this-one {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+`;
+
 
 export default function Home(){
     return(
-        <main>
+        <StyledHome>
 
             <h3>Home</h3>
             <div id="this-one">
@@ -18,7 +76,7 @@ export default function Home(){
                 and my employment history
                 <strong><em><u><a href="emp.html">here</a></u></em></strong>
                 — as well as other information that might be
-                of interest to you.<br><br> A little bit about me: My academic journey, 
+                of interest to you.<br></br> A little bit about me: My academic journey, 
                 which began with a focus on Applied Mathematics at UC Santa Cruz, 
                 has evolved into a passion for leveraging data-driven insights to 
                 solve complex problems. I am particularly interested in the 
@@ -29,6 +87,6 @@ export default function Home(){
                 mathematics, I am driven by a desire to create tools that make a 
                 meaningful impact.
             </p>
-        </main>
+        </StyledHome>
     );
 }
