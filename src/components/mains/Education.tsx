@@ -13,8 +13,8 @@ const StyledEducation = styled.main`
         font-size: calc(18px + 0.8vw);
     }
 
-    .education-item {
-        margin-bottom: 30px;
+    .edu-block {
+        margin-bottom: 40px; 
 
         h4 {
             color: #759FBC;
@@ -24,17 +24,18 @@ const StyledEducation = styled.main`
 
         p {
             font-size: calc(14px + 0.2vw);
-            margin-bottom: 10px;
+            margin-bottom: 15px; 
         }
 
         ul {
-            padding-left: 25px;
-            margin-top: 10px;
+            padding-left: 40px; 
+            margin-top: 20px;
+            list-style-type: disc;
             
             li {
-                margin-bottom: 8px;
+                margin-bottom: 10px;
                 font-size: calc(13px + 0.2vw);
-                line-height: 1.4;
+                line-height: 1.5;
             }
         }
     }
@@ -51,7 +52,7 @@ export default function Education(){
             <StyledEducation>
                 <h3>Education</h3>
                         
-                        <div>
+                        <div className="edu-block">
                             <h4>Data Science, B.S.</h4>
                             <p><strong>Boston University</strong> | <em>2024 - 2027</em></p>
                             <ul>
@@ -60,7 +61,7 @@ export default function Education(){
                                 <li>GPA: 3.8/4.0</li>
                             </ul>
                         </div>
-                        <div>
+                        <div className="edu-block">
                             <h4>High School Diploma</h4>
                             <p><strong>Moreau Catholic High School</strong> | <em>Graduated: 2023</em></p>
                             <ul>
